@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Foundation Intro</title>
+	<title>Jack's Website</title>
 	<link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Projects</h1>
     <div class="off-canvas-wrapper">
         <!-- Your menu or Off-canvas content goes here -->
         <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
@@ -17,7 +17,7 @@
             </button>
 
             <!-- Menu -->
-            <ul class="vertical menu">
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="resume.html">Resume</a></li>
@@ -26,24 +26,77 @@
         </div>
         <!-- Your page content lives here -->
         <div class="off-canvas-content" data-off-canvas-content>
+            
             <!-- main content within a `grid-container` -->
             <div class="grid-container">
-                <!-- `grid-x` represents a row -->
+                <!-- Menu / Open menu button -->
                 <div class="grid-x grid-padding-x">
-                    <div class="cell small-6 large-4" style="background-color: #ADD8E6;">Small 6 / Large 4</div>
-                    <div class="cell small-6 large-8" style="background-color: #90EE90;">Small 6 / Large 8</div>
+                    <div class="hide-for-small-only">
+                        <ul class="nav-bar-ul">
+                            <li class="nav-bar-li"><a class="nav-bar-li-a" href="index.html">Home</a></li>
+                            <li class="nav-bar-li"><a class="nav-bar-li-a" href="projects.html">Projects</a></li>
+                            <li class="nav-bar-li"><a class="nav-bar-li-a" href="resume.html">Resume</a></li>
+                            <li class="nav-bar-li"><a class="nav-bar-li-a" href="fun.html">Fun Stuff</a></li>
+                          </ul>
+                    </div>
+                    <div class="show-for-small-only">
+                        <button type="button" class="cell large-auto button nav-button-menu" data-toggle="offCanvas">Navigation Menu</button>
+                    </div>
                 </div>
-                
+
+                <!--Page content-->
+                <h1>Projects</h1>
+
+                <!--Project 1-->
                 <div class="grid-x grid-padding-x">
-                    <div class="cell large-auto" style="background-color: #ADD8E6;">One</div>
-                    <div class="cell large-auto" style="background-color: #90EE90;">Two</div>
-                    <div class="cell large-auto" style="background-color: #ADD8E6;">Three</div>
-                    <div class="cell large-auto" style="background-color: #90EE90;">Four</div>
-                    <div class="cell large-auto" style="background-color: #ADD8E6;">Five</div>
+                    <div class="cell large-6 small-12" style="background-color: #ca9be0;">
+                        <h3>STAT 320: Exploring the Factors That Influence Quality of Life</h3>
+                        <ul>
+                            <li>Project from STAT 320, Applied Regression Analysis</li>
+                            <li>During this project I worked with a group of 2 other students to analyze what factors influence a person's self-perceived quality of life</li>
+                            <li>Factors that were tested include marital status, siblings, children, the age of the respondnent when they had their first born child, years of completed education, years of father's education, years of mother's education, amount of people earning an income in the respondent's household, political party, job satisfcation, if the respondent owns a gun, and income</li>
+                            <li>Respondents were then asked to rate their quality of life on a sclae of 1 - 10</li>
+                            <li>Results of the study showed that the only variables that were useful in determining quality of life were marital status, education, and income</li>
+                            <li>The image shows these variables being shown in the regression analysis output</li>
+                        </ul>
+                    </div>
+                    <div class="cell large-6 small-12" style="background-color: #ca9be0;">
+                        <img class="project-images" src="img/project1.png"/>
+                    </div>
                 </div>
-                
+
+                <!--Project 2-->
                 <div class="grid-x grid-padding-x">
-                    <button type="button" class="cell large-auto button" data-toggle="offCanvas">Open Menu</button>
+                    <div class="cell large-6 small-12" style="background-color: #ca9be0;">
+                        <h3>OPMT 320: Neighborhood House Analysis</h3>
+                        <ul>
+                            <li>Project from OPMT 320, Decision Analysis</li>
+                            <li>The goal of this project was to analyze data from the non-profit "Neighborhood House" and help them make a business decision</li>
+                            <li>The non-profit is an orginization that aims to help those in need</li>
+                            <li>Our project analyzed the amount of service each category of thier business was using</li>
+                            <li>The idea is that the company could look at our findings and use it to see which of their programs they need to grow</li>
+                            <li>The image shows our findings</li>
+                        </ul>
+                    </div>
+                    <div class="cell large-6 small-12" style="background-color: #ca9be0;">
+                        <img class="project-images" src="img/project2.png"/>
+                    </div>
+                </div>
+
+                <!--Project 3-->
+                <div class="grid-x grid-padding-x">
+                    <div class="cell large-6 small-12" style="background-color: #ca9be0;">
+                        <h3>ACCT 100: Disney's Financial Analysis</h3>
+                        <ul>
+                            <li>Project from ACCT 100, Principles of Accounting</li>
+                            <li>In this project, my group analyzed the Walt Disney Company's financial statements</li>
+                            <li>We compared their fincial statements and statistics to their competetors</li>
+                            <li>The image shows some statistics we found</li>
+                        </ul>
+                    </div>
+                    <div class="cell large-6 small-12" style="background-color: #ca9be0;">
+                        <img class="project-images" src="img/project3.png"/>
+                    </div>
                 </div>
             </div>
         </div>

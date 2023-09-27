@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Foundation Intro</title>
+	<title>Jack's Website</title>
 	<link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Fun!</h1>
     <div class="off-canvas-wrapper">
         <!-- Your menu or Off-canvas content goes here -->
         <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
@@ -17,7 +17,7 @@
             </button>
 
             <!-- Menu -->
-            <ul class="vertical menu">
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="resume.html">Resume</a></li>
@@ -26,25 +26,44 @@
         </div>
         <!-- Your page content lives here -->
         <div class="off-canvas-content" data-off-canvas-content>
+            
             <!-- main content within a `grid-container` -->
             <div class="grid-container">
-                <!-- `grid-x` represents a row -->
+                <!-- Menu / Open menu button -->
                 <div class="grid-x grid-padding-x">
-                    <div class="cell small-6 large-4" style="background-color: #ADD8E6;">Small 6 / Large 4</div>
-                    <div class="cell small-6 large-8" style="background-color: #90EE90;">Small 6 / Large 8</div>
+                    <div class="hide-for-small-only">
+                        <ul class="nav-bar-ul">
+                            <li class="nav-bar-li"><a class="nav-bar-li-a" href="index.html">Home</a></li>
+                            <li class="nav-bar-li"><a class="nav-bar-li-a" href="projects.html">Projects</a></li>
+                            <li class="nav-bar-li"><a class="nav-bar-li-a" href="resume.html">Resume</a></li>
+                            <li class="nav-bar-li"><a class="nav-bar-li-a" href="fun.html">Fun Stuff</a></li>
+                          </ul>
+                    </div>
+                    <div class="show-for-small-only">
+                        <button type="button" class="cell large-auto button nav-button-menu" data-toggle="offCanvas">Navigation Menu</button>
+                    </div>
+                </div>
+
+                <!--Page content-->
+                <h1>Fun Stuff!</h1>
+                <div class="grid-x grid-padding-x">
+                    <div class="cell large-6 small-12" style="background-color: #ADD8E6;">
+                        <h1>Jack Lewis</h1>
+                        <ul>
+                            <li>Major: Computer Science</li>
+                            <li>Minors: Business Administration and Data Analytics</li>
+                            <li>Goal career after graduation: Software Engineer</li>
+                            <li>Hobbies: Skiing, hiking, and traveling</li>
+
+                        </ul>
+                    </div>
+                    <div class="cell large-6 small-12" style="background-color: #ADD8E6;">
+                        <img src="headshot.jpg"/>
+                    </div>
+                    
                 </div>
                 
-                <div class="grid-x grid-padding-x">
-                    <div class="cell large-auto" style="background-color: #ADD8E6;">One</div>
-                    <div class="cell large-auto" style="background-color: #90EE90;">Two</div>
-                    <div class="cell large-auto" style="background-color: #ADD8E6;">Three</div>
-                    <div class="cell large-auto" style="background-color: #90EE90;">Four</div>
-                    <div class="cell large-auto" style="background-color: #ADD8E6;">Five</div>
-                </div>
                 
-                <div class="grid-x grid-padding-x">
-                    <button type="button" class="cell large-auto button" data-toggle="offCanvas">Open Menu</button>
-                </div>
             </div>
         </div>
     </div>
